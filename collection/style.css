@@ -14,3 +14,13 @@ body{
     left:0px;
     z-index:2;
 }
+
+h3{
+    color:black;
+    font: "IBMPlexSans-Regular",sans-serif;
+    margin-left:200px;
+}
+
+select {
+    margin-left:200px;
+}
