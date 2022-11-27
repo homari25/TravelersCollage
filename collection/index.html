@@ -15,16 +15,15 @@
     </head>
     <body>
         <div class = "menu"></div>
-        </div>
         <h3>Documents</h3>
-        <select name = "documents" id="documents">
+        <select name = "documents" id="documentList">
             <option value = "ticket">Ticket</option>
             <option value = "ad">Advertising</option>
             <option value = "shop">Shop Card</option>
             <option value = "map">Map</option>
         </select>
         <h3>Colors</h3>
-        <select name = "colors" id="colors">
+        <select name = "colors" id="colorList">
             <option value = "red">Red</option>
             <option value = "blue">Blue</option>
             <option value = "yellow">Yellow</option>
@@ -32,14 +31,21 @@
             <option value = "black">Black</option>
         </select>
         <h3>Senses</h3>
-        <select name = "senses" id="senses">
+        <select name = "senses" id="senseList">
             <option value = "sight">Sight</option>
             <option value = "hear">Hearing</option>
             <option value = "touch">Touch</option>
             <option value = "smell">Smell</option>
             <option value = "taste">Taste</option>
         </select>
-        <div data-doc="ticket" data-color="red" id="ny1"></div>
+        <input type="button" id="submitButton" value="Submit" onclick="submit()">
+        <div class = "container">
+            <img class = "result" data-doc="ticket" data-color="Red" id="ny1" src="parts/ny1.png">
+            <img class = "result" data-doc="ticket" data-color="Red" id="ny2" src="parts/ny2.png">
+            <img class = "result" data-doc="ticket" data-color="Blue" id="ny3" src="parts/ny3.png">
+            <img class = "result" data-doc="ticket" id="ny4" src="parts/ny4.png">
+            <img class = "result" data-doc="ticket" data-color="Green" id="ny1" src="parts/ny5.png">
+        </div>
     <script src="scripts.js"></script>
     </div>  
     </body>

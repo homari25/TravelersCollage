@@ -1,7 +1,8 @@
 body{
-    background-image: url("paperbg.jpg");
+    background-image: url("main-parts/paperbg.jpg");
     background-color: #cccccc;
     position:relative;
+    mix-blend-mode: multiply;
 }
 
 .menu{
@@ -11,156 +12,241 @@ body{
     position:fixed;
     top:0px;
     left:0px;
-    z-index:2;
+    z-index:1;
 }
 
-/* main page */
-.map {
-    background-image: url("worldmap.svg");
-    width:100%;
-    height:100%;
+h3{
+    color:white;
+    z-index: 2;
+    font-family: 'IBMPlexSans-Regular', sans-serif;
+    margin:10px;
+}
+
+#how{
+    top:80%;
+    position: absolute;
+}
+
+#collections{
+    top:90%;
+    position: absolute;
+}
+
+#travelersCollage {
+    z-index:5;
     position:absolute;
-    top:0px;
-    left:0%;
-    mix-blend-mode: multiply;
-}
-
-/* individual city page */
-.container{
-    width:100%;
-    height:100%;
-    background-color:transparent;
-    top:0px;
-    left:150px;
-    position:relative;
-}
-
-.title{
-    mix-blend-mode: multiply;
-    position:absolute;
-}
-
-.paragraph{
-    top:150px;
-    left:0px;
-    position:absolute;
-    width:250px;
-    z-index:3;
-    font-family: 'IBMPlexSans-Regular';
-    font-size: 12px;
-    color:black;
-}
-
-.flag{
-    position:absolute;
-    mix-blend-mode: multiply;
-    top:380px;
-    left:0%;
-    width:20%;
-    height:auto;
-}
-
-.arrow {
-    position:absolute;
-    mix-blend-mode: multiply;
-    top:250px;
-    left:150%;
-    width:10%;
-    height:auto;
-}
-
-/* newyork */
-
-.piecesny{
-    position:absolute;
-    filter: drop-shadow(0 0 0.75rem gray);
-}
-
-
-.titleny {
-    top:10%;
-    left:-2%;
-    width:35%;
-    height:auto;
-}
-
-.ny1 {
-    top:100px;
-    left:30%;
-    width:15%;
-    height:auto;
-}
-
-.ny1 :hover {
+    top:0%;
+    margin:10px;
     width:50%;
 }
 
-.ny2 {
-    top:50px;
-    left:45%;
-    width:15%;
-    height:auto;
+.container{
+    background-color:transparent;
+    width:90vw;
+    height:80vh;
+    top:20vh;
+    left:150px;
+    position:absolute;
+    z-index:0;
 }
 
-.ny3 {
-    top:300px;
-    left:45%;
-    width:15%;
-    height:auto;
+svg {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0px;
+    left:0%;
+    mix-blend-mode: color-burn;
 }
 
-.ny4 {
-    top:200px;
+.feature{
+    margin: auto;
+    background-color: #D46262;
+    border: solid 2px #fff;
+    width: 11px;
+    height: 11px;
+    -moz-border-radius: 11px;
+    -webkit-border-radius: 11px;
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #D46262;
+    -webkit-box-shadow: 0 0 0 1px #D46262;
+    -moz-box-shadow: 0 0 0 1px #D46262;
+    position:absolute;
+}
+
+/* .feature>div {
+    background-color:#D46262;
+    width:80%;
+    height:80%;
+    border-radius: 50%;
+    /* align-items: left; */
+    /* position:absolute;
+    z-index:1; */
+    /* box-sizing: border-box; */
+/* } */
+
+
+#newyork {
+    top:25%;
+    left:26%;
+}
+
+#tokyo {
+    top:27%;
+    left:85%;
+}
+
+#hcmc {
+    top:42%;
+    left:76%;
+}
+
+#jakarta {
+    top:25%;
+    left:26%;
+}
+
+#leiden {
+    top:25%;
+    left:26%;
+}
+
+#istanbul {
+    top:25%;
+    left:26%;
+}
+
+#dubai {
+    top:25%;
+    left:26%;
+}
+
+#miyakejima {
+    top:25%;
+    left:26%;
+}
+
+#marrakech {
+    top:25%;
+    left:26%;
+}
+
+#porto {
+    top:25%;
+    left:26%;
+}
+
+
+.horizonLine{
+    width:100%;
+    height:1px;
+    position:absolute;
+    background-color:black;
+}
+
+.verticalLine{
+    width:1px;
+    height:100%;
+    position:absolute;
+    background-color:black;
+}
+
+div#line1.horizonLine{
+    top:10%;
+    left:0%;
+}
+
+#line2{
+    top:20%;
+    left:0%;
+}
+
+#line3{
+    top:30%;
+    left:0%;
+}
+
+#line4{
+    top:40%;
+    left:0%;
+}
+
+#line5{
+    top:50%;
+    left:0%;
+}
+
+#line6{
+    top:60%;
+    left:0%;
+}
+
+#line7{
+    top:70%;
+    left:0%;
+}
+
+#line8{
+    top:80%;
+    left:0%;
+}
+
+#line9{
+    top:90%;
+    left:0%;
+}
+
+#line10{
+    top:100%;
+    left:0%;
+}
+
+div#line1.verticalLine{
+    top:0%;
+    left:10%;
+}
+
+div#line2.verticalLine{
+    top:0%;
+    left:20%;
+}
+
+div#line3.verticalLine{
+    top:0%;
+    left:30%;
+}
+
+div#line4.verticalLine{
+    top:0%;
+    left:40%;
+}
+
+div#line5.verticalLine{
+    top:0%;
+    left:50%;
+}
+
+div#line6.verticalLine{
+    top:0%;
     left:60%;
-    width:20%;
-    height:auto;
 }
 
-.ny5 {
-    top:500px;
-    left:60%;
-    width:30%;
-    height:auto;
-}
-
-.ny6 {
-    top:100px;
+div#line7.verticalLine{
+    top:0%;
     left:70%;
-    width:20%;
-    height:auto;
 }
 
-.ny7 {
-    top:350px;
+div#line8.verticalLine{
+    top:0%;
     left:80%;
-    width:15%;
-    height:auto;
 }
 
-.ny8 {
-    top:140px;
+div#line9.verticalLine{
+    top:0%;
     left:90%;
-    width:20%;
-    height:auto;
 }
 
-.ny9 {
-    top:350px;
-    left:120%;
-    width:20%;
-    height:auto;
-}
-
-.ny10 {
-    top:230px;
+div#line10.verticalLine{
+    top:0%;
     left:100%;
-    width:20%;
-    height:auto;
-}
-
-.ny11 {
-    top:90px;
-    left:110%;
-    width:30%;
-    height:auto;
 }
