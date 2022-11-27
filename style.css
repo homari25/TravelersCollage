@@ -20,6 +20,7 @@ h3{
     z-index: 2;
     font-family: 'IBMPlexSans-Regular', sans-serif;
     margin:10px;
+    font-size: 16px;
 }
 
 #how{
@@ -27,17 +28,19 @@ h3{
     position: absolute;
 }
 
-#collections{
+#collections {
     top:90%;
     position: absolute;
 }
 
-#travelersCollage {
-    z-index:5;
+#tc {
+    z-index:2;
     position:absolute;
-    top:0%;
+    top:5%;
+    left:0%;
     margin:10px;
-    width:50%;
+    width:125px;
+    height:auto;
 }
 
 .container{
@@ -46,8 +49,18 @@ h3{
     height:80vh;
     top:20vh;
     left:150px;
-    position:absolute;
+    position:fixed;
     z-index:0;
+}
+
+#travelLog {
+    width:30%;
+    height:auto;
+    top:0%;
+    left:150px;
+    position:absolute;
+    margin:10px;
+    mix-blend-mode: multiply;
 }
 
 svg {
@@ -60,30 +73,52 @@ svg {
 }
 
 .feature{
+    /* opacity: 0.8; */
     margin: auto;
     background-color: #D46262;
     border: solid 2px #fff;
     width: 11px;
     height: 11px;
-    -moz-border-radius: 11px;
-    -webkit-border-radius: 11px;
-    border-radius: 20px;
-    box-shadow: 0 0 0 1px #D46262;
-    -webkit-box-shadow: 0 0 0 1px #D46262;
-    -moz-box-shadow: 0 0 0 1px #D46262;
+    /* -moz-border-radius: 11px;
+    -webkit-border-radius: 11px; */
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #D46262;
+    /* -webkit-box-shadow: 0 0 0 1px #D46262;
+    -moz-box-shadow: 0 0 0 1px #D46262; */
     position:absolute;
+    mix-blend-mode: multiply;
 }
-
-/* .feature>div {
+/* 
+.feature>div {
     background-color:#D46262;
     width:80%;
     height:80%;
     border-radius: 50%;
-    /* align-items: left; */
-    /* position:absolute;
-    z-index:1; */
-    /* box-sizing: border-box; */
-/* } */
+    align-items: inherit;
+    position:absolute;
+    z-index:1;
+    box-sizing: border-box;
+} */
+
+.went {
+    margin: auto;
+    background-color: #D46262;
+    width: 10px;
+    height: 10px;
+    mix-blend-mode: multiply;
+    border-radius: 50%;
+    position:absolute;
+}
+
+.lovetogo {
+    margin: auto;
+    background-color: #6262D5;
+    width: 10px;
+    height: 10px;
+    mix-blend-mode: multiply;
+    border-radius: 50%;
+    position:absolute;
+}
 
 
 #newyork {
@@ -102,40 +137,40 @@ svg {
 }
 
 #jakarta {
-    top:25%;
-    left:26%;
+    top:52%;
+    left:75.5%;
 }
 
 #leiden {
-    top:25%;
-    left:26%;
+    top:18%;
+    left:47%;
 }
 
 #istanbul {
-    top:25%;
-    left:26%;
+    top:24%;
+    left:54%;
 }
 
 #dubai {
-    top:25%;
-    left:26%;
+    top:33%;
+    left:62%;
 }
 
 #miyakejima {
-    top:25%;
-    left:26%;
+    top:30%;
+    left:84.5%;
 }
 
 #marrakech {
-    top:25%;
-    left:26%;
+    top:29%;
+    left:44%;
 }
 
 #porto {
-    top:25%;
-    left:26%;
+    top:23%;
+    left:44%;
 }
-
+/* 
 
 .horizonLine{
     width:100%;
@@ -249,4 +284,311 @@ div#line9.verticalLine{
 div#line10.verticalLine{
     top:0%;
     left:100%;
+} */
+
+#went1{
+    top:23%;
+    left:24%;
 }
+
+#went2{
+    top:36%;
+    left:4%;
+}
+
+#went3{
+    top:24%;
+    left:26%;
+}
+
+#went4{
+    top:24.5%;
+    left:26.5%;
+}
+
+#went5{
+    top:23%;
+    left:13%;
+}
+
+#went6{
+    top:24%;
+    left:13%;
+}
+
+#went7{
+    top:25%;
+    left:13.5%;
+}
+
+#went8{
+    top:26%;
+    left:44%;
+}
+
+#went8{
+    top:26%;
+    left:44%;
+}
+
+#went9{
+    top:24%;
+    left:46%;
+}
+#went10{
+    top:26%;
+    left:45%;
+}
+#went11{
+    top:17%;
+    left:46%;
+}
+
+#went12{
+    top:22%;
+    left:46%;
+}
+
+#went13{
+    top:20.5%;
+    left:46.5%;
+}
+#went14{
+    top:15%;
+    left:49%;
+}
+#went15{
+    top:20.5%;
+    left:48%;
+}
+
+#went16{
+    top:33%;
+    left:60%;
+}
+
+#went17{
+    top:60%;
+    left:87%;
+}
+
+#went18{
+    top:48%;
+    left:75%;
+}
+
+#went19{
+    top:41%;
+    left:74%;
+}
+
+#went20{
+    top:43%;
+    left:79%;
+}
+
+#went21{
+    top:41%;
+    left:76.5%;
+}
+
+#went22{
+    top:37%;
+    left:76.5%;
+}
+
+#went23{
+    top:35%;
+    left:77.5%;
+}
+
+#went24{
+    top:32%;
+    left:81%;
+}
+
+#went25{
+    top:28%;
+    left:81%;
+}
+
+#went26{
+    top:34%;
+    left:80%;
+}
+
+#went27{
+    top:25%;
+    left:85.5%;
+}
+
+#went28{
+    top:29.5%;
+    left:82.5%;
+}
+
+#went29{
+    top:30%;
+    left:82%;
+}
+
+#went30{
+    top:29%;
+    left:83%;
+}
+
+#went31{
+    top:28%;
+    left:83.5%;
+}
+
+#went32{
+    top:26%;
+    left:85%;
+}
+
+#went33{
+    top:28%;
+    left:84.5%;
+}
+
+#went34{
+    top:24%;
+    left:86%;
+}
+
+
+#lovetogo1{
+    top:92%;
+    left:22%;
+}
+
+#lovetogo2{
+    top:64%;
+    left:27.5%;
+}
+
+#lovetogo3{
+    top:62.5%;
+    left:33%;
+}
+
+#lovetogo4{
+    top:50%;
+    left:32%;
+}
+
+#lovetogo5{
+    top:43%;
+    left:23.5%;
+}
+
+#lovetogo6{
+    top:39%;
+    left:23%;
+}
+
+#lovetogo7{
+    top:23%;
+    left:14%;
+}
+
+#lovetogo8{
+    top:19%;
+    left:12.5%;
+}
+
+#lovetogo9{
+    top:22%;
+    left:21%;
+}
+ 
+#lovetogo10{
+    top:10%;
+    left:20%;
+}
+
+#lovetogo11{
+    top:36%;
+    left:25%;
+}
+
+#lovetogo12{
+    top:68%;
+    left:52%;
+}
+
+#lovetogo13{
+    top:30%;
+    left:52%;
+}
+
+
+#lovetogo14{
+    top:25%;
+    left:50%;
+}
+
+#lovetogo15{
+    top:25%;
+    left:45%;
+}
+
+
+#lovetogo16{
+    top:13%;
+    left:49%;
+}
+
+#lovetogo17{
+    top:11%;
+    left:51%;
+}
+
+#lovetogo18{
+    top:10%;
+    left:50%;
+}
+
+#lovetogo19{
+    top:18%;
+    left:60%;
+}
+
+
+#lovetogo20{
+    top:26%;
+    left:53%;
+}
+
+
+#lovetogo21{
+    top:10%;
+    left:42%;
+}
+
+#lovetogo22{
+    top:39%;
+    left:69%;
+}
+
+#lovetogo23{
+    top:24%;
+    left:74%;
+}
+
+#lovetogo24{
+    top:28%;
+    left:79%;
+}
+
+#lovetogo25{
+    top:70%;
+    left:87%;
+}
+
+#lovetogo26{
+    top:75%;
+    left:93%;
+}
+
