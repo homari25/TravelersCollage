@@ -592,6 +592,46 @@ div#line10.verticalLine{
     left:93%;
 }
 
+/*menu*/
+
+.menu{
+    background-color: black;
+    width: 150px;
+    height: 100%;
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:1;
+}
+
+h3{
+    color:white;
+    z-index: 2;
+    font-family: 'IBMPlexSans-Regular', sans-serif;
+    margin:10px;
+    font-size: 16px;
+}
+
+#how{
+    top:80%;
+    position: absolute;
+}
+
+#collections {
+    top:90%;
+    position: absolute;
+}
+
+#tc {
+    z-index:2;
+    position:absolute;
+    top:5%;
+    left:0%;
+    margin:10px;
+    width:125px;
+    height:auto;
+}
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
