@@ -22,21 +22,35 @@ window.onclick = function(event) {
 
 let imgResult = document.getElementsByClassName("result");
 let colorsList = document.getElementById("colorList");
+let docList = document.getElementById("documentList");
+let senseList = document.getElementById("senseList");
 
 
 function submit() {
     let colorSelect = colorList.options[colorList.selectedIndex].text;  
+    let docSelect = documentList.options[documentList.selectedIndex].text;  
     console.log(colorSelect);
+    console.log(docSelect);
 
 for (let i = 0; i < imgResult.length; i++) {
     let colorType = imgResult[i].getAttribute("data-color");
     // console.log(colorType);
+    let docType = imgResult[i].getAttribute("data-doc");
 
     if (colorType == colorSelect) {
-    imgResult[i].style.display = "block";
+      imgResult[i].style.display = "block";
+      imgResult[i].style.left = 10 * i + "px";
         } else {
-    imgResult[i].style.display = "none";
+      imgResult[i].style.display = "none";
         }
+
+    if (docType == docSelect) {
+      imgResult[i].style.display = "block";
+      imgResult[i].style.left = 10 * i + "px";
+        } else {
+      imgResult[i].style.display = "none";
+        }
+
     }
 }
 
