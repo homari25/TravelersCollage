@@ -29,25 +29,31 @@ let senseList = document.getElementById("senseList");
 function submit() {
     let colorSelect = colorList.options[colorList.selectedIndex].text;  
     let docSelect = documentList.options[documentList.selectedIndex].text;  
-    console.log(colorSelect);
-    console.log(docSelect);
+    let senseSelect = senseList.options[senseList.selectedIndex].text;  
+    console.log(colorSelect,docSelect,senseSelect);
 
 for (let i = 0; i < imgResult.length; i++) {
     let colorType = imgResult[i].getAttribute("data-color");
     // console.log(colorType);
     let docType = imgResult[i].getAttribute("data-doc");
+    let senseType = imgResult[i].getAttribute("data-sense");
 
-    if (colorType == colorSelect) {
+    if (colorType == colorSelect && docType == docSelect && senseType == senseSelect) {
       imgResult[i].style.display = "block";
       imgResult[i].style.left = 10 * i + "px";
         } else {
-      imgResult[i].style.display = "none";
+          imgResult[i].style.display = "none";
         }
-
     if (docType == docSelect) {
       imgResult[i].style.display = "block";
       imgResult[i].style.left = 10 * i + "px";
         } else {
+          imgResult[i].style.display = "none";
+    }
+    if (senseType == senseSelect) {
+      imgResult[i].style.display = "block";
+      imgResult[i].style.left = 10 * i + "px";        
+    } else {
       imgResult[i].style.display = "none";
         }
 
