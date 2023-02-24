@@ -14,7 +14,7 @@ body{
     position:fixed;
     top:0px;
     left:0px;
-    z-index:1;
+    z-index:5;
 }
 
 h3{
@@ -169,35 +169,38 @@ p{
 }
 
 
-/* main page */
-.map {
-    background-image: url("worldmap.svg");
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0px;
-    left:0%;
-    mix-blend-mode: multiply;
-}
-
 /* individual city page */
 .container{
-    width:100%;
-    height:100%;
+    width:1440px;
+    height:680px;
     background-color:transparent;
-    top:0px;
+    top:0%;
     left:150px;
     position:relative;
+    padding:0px;
+    margin:0px;
 }
 
-.title{
+.bgpt{
+    background-image: url("portobg.svg");
+    width:1440px;
+    height:auto;
+    top: 50%;
+    left:0%;
     mix-blend-mode: multiply;
+    position: fixed;
+    z-index: 1;
+}
+
+
+.title{
     position:absolute;
 }
 
 .paragraph{
-    top:150px;
-    left:0px;
+    top:25%;
+    left:0%;
+    margin-left:2%;
     position:absolute;
     width:250px;
     z-index:3;
@@ -209,10 +212,12 @@ p{
 .flag{
     position:absolute;
     mix-blend-mode: multiply;
-    top:380px;
+    top:60%;
     left:0%;
-    width:20%;
+    width: 200px;
     height:auto;
+    z-index:2;
+    margin-left:2%;
 }
 
 .arrow {
@@ -224,98 +229,67 @@ p{
     height:auto;
 }
 
-/* newyork */
+/* porto */
 
-.piecesny{
+.piecespt{
     position:absolute;
     filter: drop-shadow(0 0 0.75rem gray);
+    z-index: 2;
 }
 
 
-.titleny {
-    top:10%;
-    left:-2%;
-    width:35%;
+.titlept {
+    top:5%;
+    left:0%;
+    width:25%;
     height:auto;
 }
 
-.ny1 {
+#pt1 {
     top:100px;
-    left:30%;
-    width:15%;
+    left:25%;
+    width:18%;
     height:auto;
 }
 
-.ny1 :hover {
-    width:50%;
-}
-
-.ny2 {
-    top:50px;
-    left:45%;
-    width:15%;
-    height:auto;
-}
-
-.ny3 {
-    top:300px;
-    left:45%;
-    width:15%;
-    height:auto;
-}
-
-.ny4 {
-    top:200px;
-    left:60%;
+#pt2 {
+    top:60px;
+    left:40%;
     width:20%;
     height:auto;
 }
 
-.ny5 {
-    top:500px;
-    left:60%;
-    width:30%;
+#pt3 {
+    top:250px;
+    left:30%;
+    width:25%;
     height:auto;
 }
 
-.ny6 {
+#pt4 {
+    top:200px;
+    left:55%;
+    width:25%;
+    height:auto;
+}
+
+#pt5 {
+    top:200px;
+    left:80%;
+    width:20%;
+    height:auto;
+}
+
+#pt6 {
     top:100px;
     left:70%;
     width:20%;
     height:auto;
 }
 
-.ny7 {
-    top:350px;
-    left:80%;
-    width:15%;
-    height:auto;
-}
-
-.ny8 {
-    top:140px;
-    left:90%;
-    width:20%;
-    height:auto;
-}
-
-.ny9 {
-    top:350px;
-    left:120%;
-    width:20%;
-    height:auto;
-}
-
-.ny10 {
-    top:230px;
+#pt7 {
+    top:150px;
     left:100%;
-    width:20%;
-    height:auto;
-}
-
-.ny11 {
-    top:90px;
-    left:110%;
     width:30%;
     height:auto;
 }
