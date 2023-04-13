@@ -6,9 +6,9 @@ body{
 }
 
 .menu{
-    background-color: black;
-    width: 150px;
-    height: 100%;
+    background-color:transparent;
+    width: 100%;
+    height: 100px;
     position:fixed;
     top:0px;
     left:0px;
@@ -16,20 +16,28 @@ body{
 }
 
 h3{
-    color:white;
+    color:black;
     z-index: 2;
     font-family: 'IBMPlexSans-Regular', sans-serif;
     margin:10px;
     font-size: 16px;
 }
 
-#how{
-    top:80%;
+#about{
+    top:0%;
+    left: 70vw;
     position: absolute;
 }
 
 #collections {
-    top:90%;
+    top:0%;
+    left:60vw;
+    position: absolute;
+}
+
+#mapword {
+    top:0%;
+    left:50vw;
     position: absolute;
 }
 
