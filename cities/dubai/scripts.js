@@ -29,9 +29,9 @@ let modals = document.querySelectorAll("modal");
 
 
 // When the user clicks the button, open the modal 
-how.onclick = function() {
-  modal.style.display = "block";
-}
+// how.onclick = function() {
+//   modal.style.display = "block";
+// }
 
 db1.onclick = function() {
   modaldb1.style.display = "block";

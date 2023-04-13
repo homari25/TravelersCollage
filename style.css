@@ -5,51 +5,6 @@ body{
     mix-blend-mode: multiply;
 }
 
-.menu{
-    background-color:transparent;
-    width: 100%;
-    height: 100px;
-    position:fixed;
-    top:0px;
-    left:0px;
-    z-index:1;
-}
-
-h3{
-    color:black;
-    z-index: 2;
-    font-family: 'IBMPlexSans-Regular', sans-serif;
-    margin:10px;
-    font-size: 16px;
-}
-
-#about{
-    top:0%;
-    left: 70vw;
-    position: absolute;
-}
-
-#collections {
-    top:0%;
-    left:60vw;
-    position: absolute;
-}
-
-#mapword {
-    top:0%;
-    left:50vw;
-    position: absolute;
-}
-
-#tc {
-    z-index:2;
-    position:absolute;
-    top:5%;
-    left:0%;
-    margin:10px;
-    width:125px;
-    height:auto;
-}
 
 .container{
     background-color:transparent;
@@ -603,82 +558,51 @@ div#line10.verticalLine{
 /*menu*/
 
 .menu{
-    background-color: black;
-    width: 150px;
-    height: 100%;
-    position:fixed;
+    background-color:transparent;
+    width: 100%;
+    height: 50px;
+    position:absolute;
     top:0px;
     left:0px;
     z-index:1;
 }
 
 h3{
-    color:white;
+    color:black;
     z-index: 2;
     font-family: 'IBMPlexSans-Regular', sans-serif;
     margin:10px;
-    font-size: 16px;
+    font-size: 24px;
 }
 
-#how{
-    top:80%;
+#about{
+    top:0%;
+    left: 60%;
     position: absolute;
 }
 
 #collections {
-    top:90%;
+    top:0%;
+    left:73%;
+    position: absolute;
+}
+
+#mapword {
+    top:0%;
+    left:90%;
     position: absolute;
 }
 
 #tc {
     z-index:2;
     position:absolute;
-    top:5%;
+    top:0px;
     left:0%;
     margin:10px;
-    width:125px;
+    width:400px;
     height:auto;
 }
 
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto ; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 20%; /* Could be more or less, depending on screen size */
-    height:20%;
-    align-items: center;
-    position:relative;
-}
-  
-  /* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-  
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 h4{
     z-index: 3;
