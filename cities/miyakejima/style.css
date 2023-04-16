@@ -5,43 +5,51 @@ body{
 }
 
 
-/* menu */
+/*menu*/
 
 .menu{
-    background-color: black;
-    width: 150px;
-    height: 100%;
+    background-color:transparent;
+    width: 100%;
+    height: 50px;
     position:fixed;
     top:0px;
     left:0px;
-    z-index:5;
+    z-index:1;
 }
 
 h3{
-    color:white;
+    color:black;
     z-index: 2;
     font-family: 'IBMPlexSans-Regular', sans-serif;
     margin:10px;
-    font-size: 16px;
+    font-size: 24px;
 }
 
-#how{
-    top:80%;
+#about{
+    top:0%;
+    left: 60%;
     position: absolute;
 }
 
 #collections {
-    top:90%;
+    top:0%;
+    left:73%;
+    position: absolute;
+}
+
+#mapword {
+    top:0%;
+    left:90%;
     position: absolute;
 }
 
 #tc {
     z-index:2;
     position:absolute;
-    top:5%;
+    top:0px;
     left:0%;
     margin:10px;
-    width:125px;
+    width:400px;
     height:auto;
 }
 
@@ -61,14 +69,14 @@ h3{
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin-left: 40% ; /* 15% from the top and centered */
-    margin-top:15%;
+    left: 40% ; /* 15% from the top and centered */
+    top:40%;
     padding: 20px;
     padding-right:20px;
     /* border: 1px solid #888; */
     width: 20%; /* Could be more or less, depending on screen size */
     height:20%;
-    align-items: left;
+    align-content: center;
     position:relative;
 }
   
@@ -176,8 +184,8 @@ p{
     width:1440px;
     height:680px;
     background-color:transparent;
-    top:0%;
-    left:150px;
+    top:60px;
+    left:0px;
     position:relative;
     padding:0px;
     margin:0px;

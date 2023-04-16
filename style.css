@@ -7,13 +7,14 @@ body{
 
 
 .container{
+    width:1440px;
+    height:680px;
     background-color:transparent;
-    width:90vw;
-    height:80vh;
-    top:20vh;
-    left:150px;
-    position:fixed;
-    z-index:0;
+    top:60px;
+    left:0px;
+    position:relative;
+    padding:0px;
+    margin:0px;
 }
 
 #travelLog {

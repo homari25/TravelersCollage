@@ -9,9 +9,21 @@ body{
     margin-left:200px;
 } */
 
+
+.container{
+    width:1440px;
+    height:680px;
+    background-color:transparent;
+    top:60px;
+    left:0px;
+    position:relative;
+    padding:0px;
+    margin:0px;
+}
+
 .searchbars{
     top:0px;
-    left:150px;
+    left:0%;
     width:200px;
     height:100vh;
     position:fixed;
@@ -23,20 +35,6 @@ body{
      /* flex-wrap:wrap; */
 }
 
-.container{
-    top:0px;
-    left:350px;
-    width:100vw;
-    height:100vh;
-    position:relative;
-    /* background-color: red; */
-    z-index:0;
-    display:flex;
-    /* flex-wrap:wrap; */
-    justify-content: space-evenly;
-    margin:0px;
-    padding:10px;
-}
 
 .result{
     position:absolute;
