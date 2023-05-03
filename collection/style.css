@@ -1,39 +1,85 @@
 body{
     background-image: url("paperbg.jpg");
-    background-repeat: repeat;
+    /* background-repeat: repeat; */
     background-color: #cccccc;
     position:relative;
+    mix-blend-mode: multiply;
 }
 
 /* select {
     margin-left:200px;
 } */
 
+.searchbars{
+    top:70px;
+    left:0%;
+    width:100vw;
+    height:70px;
+    position:fixed;
+    /* background-color: blue; */
+    z-index: 2;
+    padding:20px;
+    padding-bottom:0px;
+    margin:auto;
+}
+
+.search{
+    font-family: 'IBMPlexSans-Regular', sans-serif;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+    color:black;
+    background-color: transparent;
+    width: 200px;
+    height:40px;
+    margin:auto;
+    position:absolute;
+    /* display:block; */
+    /* flex-wrap:inherit; */
+}
+
+#colorList{
+    left: 20px;
+}
+
+#documentList{
+    left:250px;
+}
+
+#senseList{
+    left: 480px;
+}
+
+#submitButton {
+    left:710px;
+    position:absolute;
+    font-family: 'IBMPlexSans-Regular', sans-serif;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+    background-color: black;
+    width: 100px;
+    height:40px;
+    margin:auto;
+}
+
+option .selected{
+    background-color:black;
+    color:white;
+}
 
 .container{
-    width:1440px;
+    width:100vw;
     height:680px;
-    background-color:transparent;
-    top:60px;
+    /* background-color:red; */
+    top:140px;
     left:0px;
-    position:relative;
+    position:fixed;
     padding:0px;
     margin:0px;
 }
 
-.searchbars{
-    top:0px;
-    left:0%;
-    width:200px;
-    height:100vh;
-    position:fixed;
-    /* background-color: blue; */
-    z-index: 2;
-    margin:0px;
-    padding:10px;
-    /* display:block; */
-     /* flex-wrap:wrap; */
-}
 
 
 .result{
@@ -55,7 +101,7 @@ body{
     background-color:transparent;
     width: 100%;
     height: 50px;
-    position:absolute;
+    position:fixed;
     top:0px;
     left:0px;
     z-index:1;
@@ -98,125 +144,9 @@ h3{
 }
 
 
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto ; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 20%; /* Could be more or less, depending on screen size */
-    height:20%;
-    align-items: center;
-    position:relative;
-}
-  
-  /* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-  
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-h4{
-    z-index: 3;
-    font-family: 'IBMPlexSans-Regular', sans-serif;
-    margin:10px;
-}
-
 p{
     font-family: 'IBMPlexSans-Regular', sans-serif;
     font-size: small;
     position:absolute;
 }
 
-.example-double {
-    /* opacity: 0.8; */
-    margin: auto;
-    background-color: #D46262;
-    border: solid 2px #fff;
-    width: 11px;
-    height: 11px;
-    /* -moz-border-radius: 11px;
-    -webkit-border-radius: 11px; */
-    border-radius: 50%;
-    box-shadow: 0 0 0 2px #D46262;
-    /* -webkit-box-shadow: 0 0 0 1px #D46262;
-    -moz-box-shadow: 0 0 0 1px #D46262; */
-    position:absolute;
-    mix-blend-mode: multiply;
-    top:37.5%;
-    left:10%;
-}
-
-.example-red {
-    margin: auto;
-    background-color: #D46262;
-    width: 11px;
-    height: 11px;
-    mix-blend-mode: multiply;
-    border-radius: 50%;
-    position:absolute;
-    top:58.5%;
-    left:10%;
-}
-
-.example-blue {
-    margin: auto;
-    background-color: #6262D5;
-    width: 11px;
-    height: 11px;
-    mix-blend-mode: multiply;
-    border-radius: 50%;
-    position:absolute;
-    top:78.5%;
-    left:10%;
-}
-
-
-#check {
-    top:25%;
-    left:15%;
-    text-align: left;
-    margin:20px;
-    width:250px;
-    height:auto;
-}
-
-#been {
-    top:45%;
-    left:15%;
-    text-align: left;
-    margin:20px;
-    width:250px;
-    height:auto;
-}
-
-#wouldlove {
-    top:65%;
-    left:15%;
-    text-align: left;
-    margin:20px;
-    width:250px;
-    height:auto;
-}

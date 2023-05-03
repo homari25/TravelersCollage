@@ -17,37 +17,32 @@
         <div class = "menu">
             <a href="index.html"><image id = "tc" src = "title_long.png"></image></a>
             <h3 id = "about">ABOUT</h3>
-            </div>
-            <a href="collection/index.html"><h3 id = "collections">COLLECTION</h3></a>
+            <a href="collection/index.html"><h3 id = "collections"><u>COLLECTION</u></h3></a>
             <a href="collection/index.html"><h3 id = "mapword">MAP</h3></a>
         </div>
-        <div class = "container">
         <div class = "searchbars">
-            <h5>Documents</h5>
-            <select name = "documents" id="documentList">
-                <option value = "none">- Select from here -</option>
-                <option value = "ticket">ticket</option>
-                <option value = "advertising">advertising</option>
-                <option value = "shop">shop card</option>
-                <option value = "map">map</option>
+            <select class = "search" name = "colors" id="colorList">
+                <option value = "none">COLORS</option>
+                <option class = "selected" value = "red">RED</option>
+                <option class = "selected" value = "blue">BLUE</option>
+                <option class = "selected" value = "yellow">YELLOW</option>
+                <option class = "selected" value = "green">GREEN</option>
+                <option class = "selected" value = "black">BLACK</option>
             </select>
-            <h5>Colors</h5>
-            <select name = "colors" id="colorList">
-                <option value = "none">- Select from here -</option>
-                <option value = "red">red</option>
-                <option value = "blue">blue</option>
-                <option value = "yellow">yellow</option>
-                <option value = "green">green</option>
-                <option value = "black">black</option>
+            <select class = "search" name = "documents" id="documentList">
+                <option value = "none">DOCUMENT</option>
+                <option class = "selected" value = "ticket">TICKET</option>
+                <option class = "selected" value = "advertising">ADVERTISING</option>
+                <option class = "selected" value = "shop">SHOP CARD</option>
+                <option class = "selected" value = "map">MAP</option>
             </select>
-            <h5>Senses</h5>
-            <select name = "senses" id="senseList">
-                <option value = "none">- Select from here -</option>
-                <option value = "sight">sight</option>
-                <option value = "hear">hear</option>
-                <option value = "touch">touch</option>
-                <option value = "smell">smell</option>
-                <option value = "taste">taste</option>
+            <select class = "search" name = "senses" id="senseList">
+                <option value = "none">SENSE</option>
+                <option class = "selected" value = "sight">SEE</option>
+                <option class = "selected" value = "hear">HEAR</option>
+                <option class = "selected" value = "touch">TOUCH</option>
+                <option class = "selected" value = "smell">SMELL</option>
+                <option class = "selected" value = "taste">TASTE</option>
             </select>
             <input type="button" id="submitButton" value="Submit" onclick="submit()">
         </div>
