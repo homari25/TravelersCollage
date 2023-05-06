@@ -11,9 +11,9 @@ let randomPosY = Math.random() * 10;
 console.log(randomPosX);
 
 function submit() {
-    let colorSelect = colorList.options[colorList.selectedIndex].text;  
-    let docSelect = documentList.options[documentList.selectedIndex].text;  
-    let senseSelect = senseList.options[senseList.selectedIndex].text;  
+    let colorSelect = colorList.options[colorList.selectedIndex].value;  
+    let docSelect = documentList.options[documentList.selectedIndex].value;  
+    let senseSelect = senseList.options[senseList.selectedIndex].value;  
     console.log(colorSelect,docSelect,senseSelect);
 
 for (let i = 0; i < imgResult.length; i++) {
@@ -23,9 +23,11 @@ for (let i = 0; i < imgResult.length; i++) {
     let senseType = imgResult[i].getAttribute("data-sense");
 
     if (colorType == colorSelect) {
-      imgResult[i].style.display = "block";
-      imgResult[i].style.top = randomPosY * i+ "px";
-      imgResult[i].style.left = randomPosX * i + "px";
+      imgResult[i].style.display = "grid";
+      imgResult[i].style.top = 10 + "px";
+      imgResult[i].style.left = 5 * i + "px";
+      imgResult[i].style.marginLeft = 10 * i + "px";
+      // imgResult[i].style.marginTop = 5 * i + "px";
         } else {
           imgResult[i].style.display = "none";
         }

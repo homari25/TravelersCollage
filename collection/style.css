@@ -75,7 +75,7 @@ option .selected{
     /* background-color:red; */
     top:140px;
     left:0px;
-    position:fixed;
+    position:relative;
     padding:0px;
     margin:0px;
 }
@@ -150,3 +150,11 @@ p{
     position:absolute;
 }
 
+.result{
+    width:15%;
+    position:absolute;
+}
+
+#tk4{
+    width:10%;
+}
