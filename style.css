@@ -17,6 +17,31 @@ body{
     margin:0px;
 }
 
+
+  
+img.feature {
+    position:absolute;
+    transition: transform .6s ease; 
+    opacity:0;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+img.feature:hover{
+    transform: scale(1.3);
+}
+
+
+
+
 #travelLog {
     width:30%;
     height:auto;
@@ -34,6 +59,8 @@ svg {
     top:0%;
     left:0%;
     mix-blend-mode: color-burn;
+    animation-name: appear;
+    animation-duration: 3s;
 }
 
 /* 
@@ -48,14 +75,6 @@ svg {
     box-sizing: border-box;
 } */
 
-img.feature {
-    position:absolute;
-    transition: transform .6s ease; 
-}
-
-img.feature:hover{
-    transform: scale(1.3);
-}
 
 
 #newyork {
