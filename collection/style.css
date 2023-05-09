@@ -3,7 +3,6 @@ body{
     /* background-repeat: repeat; */
     background-color: #cccccc;
     position:relative;
-    mix-blend-mode: multiply;
 
 }
 
@@ -22,6 +21,7 @@ body{
     padding:20px;
     padding-bottom:0px;
     margin:auto;
+    background-image: url("paperbg.jpg");
 }
 
 .search{
@@ -65,9 +65,31 @@ body{
     margin:auto;
 }
 
-option .selected{
+
+.search .select {
+    font-family: 'IBMPlexSans-Regular', sans-serif;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+    color:black;
+    background-color: transparent;
+    width: 200px;
+    height:40px;
+    margin:auto;
+    position:absolute;
+}
+
+.search .selected {
     background-color:black;
     color:white;
+    font-family: 'IBMPlexSans-Regular', sans-serif;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+    width: 200px;
+    height:40px;
+    margin:auto;
+    position:absolute;
 }
 
 .container{
@@ -109,11 +131,12 @@ option .selected{
 .menu{
     background-color:transparent;
     width: 100%;
-    height: 50px;
+    height: 70px;
     position:fixed;
     top:0px;
     left:0px;
     z-index:1;
+    background-image: url("paperbg.jpg");
 }
 
 h3{
@@ -161,6 +184,7 @@ p{
 
 .result{
     width:15%;
+    height:auto;
     position:absolute;
     transition: transform .6s ease; 
 }
