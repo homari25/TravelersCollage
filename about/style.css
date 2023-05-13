@@ -1,0 +1,192 @@
+body{
+    background-image: url("paperbg.jpg");
+    /* background-repeat: repeat; */
+    background-color: #cccccc;
+    position:relative;
+
+}
+
+/* select {
+    margin-left:200px;
+} */
+
+.searchbars{
+    top:70px;
+    left:0%;
+    width:100vw;
+    height:70px;
+    position:fixed;
+    /* background-color: blue; */
+    z-index: 2;
+    padding:20px;
+    padding-bottom:0px;
+    margin:auto;
+    background-image: url("paperbg.jpg");
+}
+
+.search{
+    font-family: 'IBMPlexSans-Regular', sans-serif;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+    color:black;
+    background-color: transparent;
+    width: 200px;
+    height:40px;
+    margin:auto;
+    position:absolute;
+    /* display:block; */
+    /* flex-wrap:inherit; */
+}
+
+#colorList{
+    left: 20px;
+}
+
+#documentList{
+    left:250px;
+}
+
+#senseList{
+    left: 480px;
+}
+
+#submitButton {
+    left:710px;
+    position:absolute;
+    font-family: 'IBMPlexSans-Regular', sans-serif;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+    background-color: black;
+    width: 100px;
+    height:40px;
+    margin:auto;
+}
+
+
+.search .select {
+    font-family: 'IBMPlexSans-Regular', sans-serif;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+    color:black;
+    background-color: transparent;
+    width: 200px;
+    height:40px;
+    margin:auto;
+    position:absolute;
+}
+
+.search .selected {
+    background-color:black;
+    color:white;
+    font-family: 'IBMPlexSans-Regular', sans-serif;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+    width: 200px;
+    height:40px;
+    margin:auto;
+    position:absolute;
+}
+
+#container{
+    width:100vw;
+    height:680px;
+    background-color:transparent;
+    top:140px;
+    left:0px;
+    position:relative;
+    margin:0px;
+    align-items: center;
+    /* overflow:hidden; */
+}
+
+
+
+.result{
+    position:absolute;
+    width:10%;
+    display:none;
+}
+
+/* #ny1{
+    top:0px;
+    left:0px;
+
+    height:auto;
+} */
+
+/* menu */
+
+.menu{
+    background-color:transparent;
+    width: 100%;
+    height: 70px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:1;
+    background-image: url("paperbg.jpg");
+}
+
+h3{
+    color:black;
+    z-index: 2;
+    font-family: 'IBMPlexSans-Regular', sans-serif;
+    margin:10px;
+    font-size: 24px;
+}
+
+#about{
+    top:0%;
+    left: 60%;
+    position: absolute;
+}
+
+#collections {
+    top:0%;
+    left:73%;
+    position: absolute;
+}
+
+#mapword {
+    top:0%;
+    left:90%;
+    position: absolute;
+}
+
+#tc {
+    z-index:2;
+    position:absolute;
+    top:0px;
+    left:0%;
+    margin:10px;
+    width:400px;
+    height:auto;
+}
+
+
+p{
+    font-family: 'IBMPlexSans-Regular', sans-serif;
+    font-size: small;
+    position:absolute;
+}
+
+.result{
+    width:15%;
+    height:auto;
+    position:absolute;
+    transition: transform .6s ease; 
+}
+
+.result:hover{
+    transform: scale(1.3); 
+    z-index:3;  
+}
+
+#tk4{
+    width:10%;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Traveler's Collage - Collection -</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "IBMPlexSans-Regular" href="parts/IBMPlexSans-Regular.ttf">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class = "menu">
+            <a href="index.html"><image id = "tc" src = "title_long.png"></image></a>
+            <h3 id = "about">ABOUT</h3>
+            <a href="collection/index.html"><h3 id = "collections"><u>COLLECTION</u></h3></a>
+            <a href="collection/index.html"><h3 id = "mapword">MAP</h3></a>
+        </div>
+        <div class = "searchbars">
+            <select class = "search" name = "colors" id="colorList">
+                <option value = "none">COLORS</option>
+                <option class = "selected" value = "red">RED</option>
+                <option class = "selected" value = "blue">BLUE</option>
+                <option class = "selected" value = "yellow">YELLOW</option>
+                <option class = "selected" value = "green">GREEN</option>
+                <option class = "selected" value = "black">BLACK</option>
+            </select>
+            <select class = "search" name = "documents" id="documentList">
+                <option value = "none">DOCUMENT</option>
+                <option class = "selected" value = "ticket">TICKET</option>
+                <option class = "selected" value = "advertising">ADVERTISING</option>
+                <option class = "selected" value = "shop">SHOP CARD</option>
+                <option class = "selected" value = "map">MAP</option>
+            </select>
+            <select class = "search" name = "senses" id="senseList">
+                <option value = "none">SENSE</option>
+                <option class = "selected" value = "sight">SEE</option>
+                <option class = "selected" value = "hear">HEAR</option>
+                <option class = "selected" value = "touch">TOUCH</option>
+                <option class = "selected" value = "smell">SMELL</option>
+                <option class = "selected" value = "taste">TASTE</option>
+            </select>
+            <input type="button" id="submitButton" value="Submit" onclick="submit()">
+        </div>
+        <div id = "container">
+            <img class = "result" data-doc="none" data-sense="none" data-color="none" id="db1" src="parts/db1.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="black" id="db2" src="parts/db2.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="black" id="db3" src="parts/db3.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="blue" id="db4" src="parts/db4.png">
+            <img class = "result" data-doc="Ticket" data-sense="none" data-color="none" id="db5" src="parts/db5.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="black" id="db6" src="parts/db6.png">
+            <img class = "result" data-doc="none" data-sense="touch" data-color="yellow" id="db7" src="parts/db7.png">
+            <img class = "result" data-doc="none" data-sense="smell" data-color="none" id="db8" src="parts/db8.png">
+            <img class = "result" data-doc="advertising" data-sense="sight" data-color="blue" id="db9" src="parts/db9.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="blue" id="db10" src="parts/db10.png">
+            <img class = "result" data-doc="none" data-sense="sight" data-color="blue" id="db11" src="parts/db11.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="blue" id="hcmc1" src="parts/hcmc1.png">
+            <img class = "result" data-doc="shop" data-sense="none" data-color="green" id="hcmc2" src="parts/hcmc2.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="none" id="hcmc3" src="parts/hcmc3.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="black" id="hcmc4" src="parts/hcmc4.png">
+            <img class = "result" data-doc="none" data-sense="sight" data-color="none" id="hcmc5" src="parts/hcmc5.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="none" id="hcmc6" src="parts/hcmc6.png">
+            <img class = "result" data-doc="Ticket" data-sense="none" data-color="none" id="hcmc7" src="parts/hcmc7.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="green" id="hcmc7" src="parts/hcmc7.png">
+            <img class = "result" data-doc="advertising" data-sense="taste" data-color="none" id="jkt1" src="parts/jkt1.png">
+            <img class = "result" data-doc="none" data-sense="hear" data-color="red" id="jkt2" src="parts/jkt2.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="none" id="jkt3" src="parts/jkt3.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="none" id="jkt4" src="parts/jkt4.png">
+            <img class = "result" data-doc="none" data-sense="hear" data-color="none" id="jkt5" src="parts/jkt5.png">
+            <img class = "result" data-doc="shop" data-sense="none" data-color="none" id="jkt6" src="parts/jkt6.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="red" id="jkt7" src="parts/jkt7.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="red" id="jkt8" src="parts/jkt8.png">
+            <img class = "result" data-doc="advertising" data-sense="none" data-color="black" id="jkt9" src="parts/jkt9.png">
+            <img class = "result" data-doc="shop" data-sense="none" data-color="none" id="jkt10" src="parts/jkt10.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="blue" id="ld1" src="parts/ld1.png">
+            <img class = "result" data-doc="map" data-sense="none" data-color="yellow" id="ld2" src="parts/ld2.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="black" id="ld3" src="parts/ld3.png">
+            <img class = "result" data-doc="none" data-sense="hear" data-color="none" id="ld4" src="parts/ld4.png">
+            <img class = "result" data-doc="none" data-sense="sight" data-color="blue" id="ld5" src="parts/ld5.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="blue" id="ld6" src="parts/ld6.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="none" id="ld7" src="parts/ld7.png">
+            <img class = "result" data-doc="none" data-sense="sight" data-color="blue" id="ld8" src="parts/ld8.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="black" id="ld9" src="parts/ld9.png">
+            <img class = "result" data-doc="shop" data-sense="taste" data-color="red" id="ld10" src="parts/ld10.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="blue" id="ld11" src="parts/ld11.png">
+            <img class = "result" data-doc="shop" data-sense="none" data-color="yellow" id="mk1" src="parts/mk1.png">
+            <img class = "result" data-doc="none" data-sense="sight" data-color="none" id="mk2" src="parts/mk2.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="blue" id="mk3" src="parts/mk3.png">
+            <img class = "result" data-doc="map" data-sense="none" data-color="none" id="mk4" src="parts/mk4.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="yellow" id="mk5" src="parts/mk5.png">
+            <img class = "result" data-doc="shop" data-sense="taste" data-color="blue" id="mk6" src="parts/mk6.png">
+            <img class = "result" data-doc="advertising" data-sense="none" data-color="blue" id="mk7" src="parts/mk7.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="blue" id="mk8" src="parts/mk8.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="red" id="mk9" src="parts/mk9.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="yellow" id="mkj1" src="parts/mkj1.png">
+            <img class = "result" data-doc="map" data-sense="none" data-color="green" id="mkj2" src="parts/mkj2.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="none" id="mkj3" src="parts/mkj3.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="none" id="mkj4" src="parts/mkj4.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="none" id="mkj5" src="parts/mkj5.png">
+            <img class = "result" data-doc="none" data-sense="sight" data-color="none" id="mkj6" src="parts/mkj6.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="yellow" id="mkj7" src="parts/mkj7.png">
+            <img class = "result" data-doc="advertising" data-sense="none" data-color="none" id="mkj8" src="parts/mkj8.png">
+            <img class = "result" data-doc="none" data-sense="taste" data-color="green" id="mkj9" src="parts/mkj9.png">
+            <img class = "result" data-doc="none" data-sense="touch" data-color="none" id="mkj10" src="parts/mkj10.png">
+            <img class = "result" data-doc="none" data-sense="smell" data-color="none" id="mkj11" src="parts/mkj11.png">
+            <img class = "result" data-doc="none" data-sense="taste" data-color="none" id="mkj12" src="parts/mkj12.png">
+            <img class = "result" data-doc="none" data-sense="smell" data-color="none" id="mkj13" src="parts/mkj13.png">
+            <img class = "result" data-doc="none" data-sense="taste" data-color="none" id="mkj14" src="parts/mkj14.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="none" id="mkj15" src="parts/mkj15.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="none" id="mkj16" src="parts/mkj16.png">
+            <img class = "result" data-doc="none" data-sense="sight" data-color="none" id="mkj17" src="parts/mkj17.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="none" id="mkj18" src="parts/mkj18.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="none" id="mkj19" src="parts/mkj19.png">
+            <img class = "result" data-doc="shop" data-sense="none" data-color="red" id="ny1" src="parts/ny1.png">
+            <img class = "result" data-doc="shop" data-sense="none" data-color="red" id="ny2" src="parts/ny2.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="blue" id="ny3" src="parts/ny3.png">
+            <img class = "result" data-doc="Ticket" id="ny4" src="parts/ny4.png">
+            <img class = "result" data-doc="none" data-sense="taste" data-color="green" id="ny5" src="parts/ny5.png">
+            <img class = "result" data-doc="Ticket" data-sense="none" data-color="none" id="ny6" src="parts/ny6.png">
+            <img class = "result" data-doc="advertising" data-sense="none" data-color="blue" id="ny7" src="parts/ny7.png">
+            <img class = "result" data-doc="shop" data-sense="none" data-color="yellow" id="ny8" src="parts/ny8.png">
+            <img class = "result" data-doc="none" data-sense="sight" data-color="black" id="ny9" src="parts/ny9.png">
+            <img class = "result" data-doc="shop" data-sense="none" data-color="none" id="ny10" src="parts/ny10.png">
+            <img class = "result" data-doc="Ticket" data-sense="none" data-color="none" id="ny11" src="parts/ny11.png">
+            <img class = "result" data-doc="Ticket" data-sense="none" data-color="blue" id="pt1" src="parts/pt1.png">
+            <img class = "result" data-doc="none" data-sense="sight" data-color="yellow" id="pt2" src="parts/pt2.png">
+            <img class = "result" data-doc="none" data-sense="sight" data-color="blue" id="pt3" src="parts/pt3.png">
+            <img class = "result" data-doc="none" data-sense="hear" data-color="black" id="pt4" src="parts/pt4.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="black" id="pt5" src="parts/pt5.png">
+            <img class = "result" data-doc="Ticket" data-sense="none" data-color="blue" id="pt6" src="parts/pt6.png">
+            <img class = "result" data-doc="map" data-sense="none" data-color="green" id="pt7" src="parts/pt7.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="none" id="tk1" src="parts/tk1.png">
+            <img class = "result" data-doc="map" data-sense="none" data-color="yellow" id="tk2" src="parts/tk2.png">
+            <img class = "result" data-doc="none" data-sense="smell" data-color="none" id="tk3" src="parts/tk3.png">
+            <img class = "result" data-doc="none" data-sense="hear" data-color="yellow" id="tk4" src="parts/tk4.png">
+            <img class = "result" data-doc="Ticket" data-sense="none" data-color="yellow" id="tk5" src="parts/tk5.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="red" id="tk6" src="parts/tk6.png">
+            <img class = "result" data-doc="none" data-sense="smell" data-color="none" id="tk7" src="parts/tk7.png">
+            <img class = "result" data-doc="Ticket" data-sense="none" data-color="blue" id="tk8" src="parts/tk8.png">
+            <img class = "result" data-doc="advertising" data-sense="none" data-color="none" id="tk9" src="parts/tk9.png">
+            <img class = "result" data-doc="shop" data-sense="none" data-color="none" id="tk10" src="parts/tk10.png">
+            <img class = "result" data-doc="none" data-sense="sight" data-color="none" id="tk11" src="parts/tk11.png">
+            <img class = "result" data-doc="map" data-sense="none" data-color="none" id="tky1" src="parts/tky1.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="red" id="tky2" src="parts/tky2.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="none" id="tky3" src="parts/tky3.png">
+            <img class = "result" data-doc="none" data-sense="touch" data-color="none" id="tky4" src="parts/tky4.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="black" id="tky5" src="parts/tky5.png">
+            <img class = "result" data-doc="none" data-sense="none" data-color="red" id="tky6" src="parts/tky6.png">
+            <img class = "result" data-doc="advertising" data-sense="none" data-color="none" id="tky7" src="parts/tky7.png">
+            <img class = "result" data-doc="shop" data-sense="none" data-color="yellow" id="tky8" src="parts/tky8.png">
+            <img class = "result" data-doc="shop" data-sense="none" data-color="yellow" id="tky9" src="parts/tky9.png">
+            <img class = "result" data-doc="advertising" data-sense="none" data-color="red" id="tky10" src="parts/tky10.png">
+            <img class = "result" data-doc="Ticket" data-sense="touch" data-color="none" id="tky11" src="parts/tky11.png">    
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    </div>  
+    </body>
+</html>

@@ -1,6 +1,7 @@
 body{
     background-image: url("paperbg.jpg");
-    background-color: #cccccc;
+    background-color: #ffffff;
+    background-repeat: repeat;
     position:relative;
 }
 
@@ -34,9 +35,9 @@ body{
 }
 
 .paragraph{
-    top:25%;
+    top:35%;
     left:0%;
-    margin-left:2%;
+    margin-left:1%;
     position:absolute;
     width:250px;
     z-index:3;
@@ -48,12 +49,12 @@ body{
 .flag{
     position:absolute;
     mix-blend-mode: multiply;
-    top:50%;
+    top:70%;
     left:0%;
     width: 200px;
     height:auto;
     z-index:2;
-    margin-left:2%;
+    margin-left:1%;
 }
 
 .arrow {
@@ -69,16 +70,17 @@ body{
 
 .piecesdb{
     position:absolute;
-    filter: drop-shadow(0 0 0.75rem gray);
+    filter: drop-shadow(0 0 0.5rem #333333);
     z-index: 2;
 }
 
 
 .titledb {
-    top:0%;
+    top:10%;
     left:0%;
     width:25%;
     height:auto;
+    mix-blend-mode: multiply;
 }
 
 #db1 {
