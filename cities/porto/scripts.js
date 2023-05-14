@@ -2,7 +2,7 @@ let how = document.getElementById("how");
 let modal = document.getElementById("myModal");
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
-let piecespt = document.getElementsByClassName("piecespt");
+let piecespts = document.getElementsByClassName("piecespt");
 let pt1 = document.getElementById("pt1");
 let pt2 = document.getElementById("pt2");
 let pt3 = document.getElementById("pt3");
@@ -23,6 +23,13 @@ let modals = document.querySelectorAll("modal");
 
 
 // When the user clicks the button, open the modal 
+
+for (let piecespt of piecespts) {
+  let animationRandomSec = Math.random() * (8 - 3) + 3 + "s";
+  piecespt.style.animationDuration = animationRandomSec;
+  piecespt.style.display = "block";
+  console.log(piecespt);
+}
 
 pt1.onclick = function() {
   modalpt1.style.display = "block";

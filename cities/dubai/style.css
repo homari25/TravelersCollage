@@ -32,6 +32,10 @@ body{
 
 .title{
     position:absolute;
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .paragraph{
@@ -44,6 +48,10 @@ body{
     font-family: 'IBMPlexSans-Regular';
     font-size: 12px;
     color:black;
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .flag{
@@ -55,6 +63,10 @@ body{
     height:auto;
     z-index:2;
     margin-left:1%;
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .arrow {
@@ -72,6 +84,21 @@ body{
     position:absolute;
     filter: drop-shadow(0 0 0.5rem #333333);
     z-index: 2;
+    transition: transform .6s ease; 
+    opacity:0;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+.piecesdb:hover{
+    transform: scale(1.3);
 }
 
 
@@ -227,19 +254,21 @@ h3{
     background-color: #fefefe;
     left: 40% ; /* 15% from the top and centered */
     top:40%;
-    padding: 20px;
-    padding-right:20px;
+    padding:15px;
     /* border: 1px solid #888; */
     width: 20%; /* Could be more or less, depending on screen size */
-    height:20%;
+    height:auto;
     align-content: center;
-    position:relative;
+    position:absolute;
+    display:flex;
 }
   
 
 p{
     font-family: 'IBMPlexSans-Regular', sans-serif;
     font-size: small;
-    position:absolute;
+    /* position:absolute; */
+    width:calc(20%-20px);
+    align-content: center;
 }
 

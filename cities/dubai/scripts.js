@@ -2,7 +2,7 @@ let how = document.getElementById("how");
 let modal = document.getElementById("myModal");
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
-let piecesdb = document.getElementsByClassName("piecesdb");
+let piecesdbs = document.getElementsByClassName("piecesdb");
 let db1 = document.getElementById("db1");
 let db2 = document.getElementById("db2");
 let db3 = document.getElementById("db3");
@@ -27,6 +27,12 @@ let modaldb10 = document.getElementById("modalDb10");
 let modaldb11 = document.getElementById("modalDb11");
 let modals = document.querySelectorAll("modal");
 
+for (let piecesdb of piecesdbs) {
+  let animationRandomSec = Math.random() * (8 - 3) + 3 + "s";
+  piecesdb.style.animationDuration = animationRandomSec;
+  piecesdb.style.display = "block";
+  console.log(piecesdb);
+}
 
 // When the user clicks the button, open the modal 
 // how.onclick = function() {

@@ -2,7 +2,7 @@ let how = document.getElementById("how");
 let modal = document.getElementById("myModal");
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
-let piecesny = document.getElementsByClassName("piecesny");
+let piecesnys = document.getElementsByClassName("piecesny");
 let ny1 = document.getElementById("ny1");
 let ny2 = document.getElementById("ny2");
 let ny3 = document.getElementById("ny3");
@@ -26,6 +26,13 @@ let modalny9 = document.getElementById("modalNy9");
 let modalny10 = document.getElementById("modalNy10");
 let modalny11 = document.getElementById("modalNy11");
 let modals = document.querySelectorAll("modal");
+
+for (let piecesny of piecesnys) {
+  let animationRandomSec = Math.random() * (8 - 3) + 3 + "s";
+  piecesny.style.animationDuration = animationRandomSec;
+  piecesny.style.display = "block";
+  console.log(piecesny);
+}
 
 
 // When the user clicks the button, open the modal 
