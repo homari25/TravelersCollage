@@ -1,6 +1,6 @@
 body{
-    /* background-image: url("main-parts/paperbg.jpg"); */
-    background-color: #ffffff;
+    background-image: url("main-parts/paperbg.jpg");
+    background-color: #cccccc;
     position:relative;
     mix-blend-mode: multiply;
 }
