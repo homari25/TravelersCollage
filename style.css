@@ -17,6 +17,9 @@ body{
     margin:0px;
 }
 
+#myVideo {
+    transition: transform .5s ease;
+}
 
   
 img.feature {
@@ -30,9 +33,9 @@ img.feature {
     animation-fill-mode: forwards;
 }
 
-@keyframes appear {
-    from {opacity: 0;}
-    to {opacity: 1;}
+@keyframes disappear {
+    from {opacity: 1;}
+    to {opacity: 0;}
   }
 
 img.feature:hover{
