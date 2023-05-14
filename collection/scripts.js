@@ -20,21 +20,81 @@ function submit() {
     let docType = imgResults[i].getAttribute("data-doc");
     let senseType = imgResults[i].getAttribute("data-sense"); 
 
-    // Check if any filter is selected
-    let filterApplied = (colorSelect !== "none") || (docSelect !== "none") || (senseSelect !== "none");
+    let sameFilters = (colorType == colorSelect && docType == docSelect) ||
+    (docType == docSelect && senseType == senseSelect) ||
+    (colorType == colorSelect && senseType == senseSelect);
 
-    if (!filterApplied || (colorType == colorSelect && docType == docSelect && senseType == senseSelect)) {
+    // Check if any filter is selected
+    // let filterApplied = (colorSelect !== "none") || (docSelect !== "none") || (senseSelect !== "none");
+    // if (colorType == colorSelect) {
+    // if (!filterApplied || (colorType == colorSelect && docType == docSelect && senseType == senseSelect)) {
+      if (colorType == colorSelect && docSelect=="document" && senseSelect=="sense") {
       imgResults[i].style.display = "block";
       imgResults[i].style.position = "absolute";
-      imgResults[i].style.width = "10%";
-      imgResults[i].style.top = count % 3 * height / 3 + "px";
-      imgResults[i].style.left = Math.floor(count / 3) * width / 3 + "px";
+      if (imgResults[i].style.height > "200px") {
+        imgResults[i].style.height = "200px";
+        imgResults[i].style.width = "auto";
+      } else {
+        imgResults[i].style.width = "200px";
+        imgResults[i].style.height = "auto";
+      }
+      console.log(imgResults[i]);
+    
+      imgResults[i].style.top = count % 3 * 200 + "px";
+      imgResults[i].style.left = Math.floor(count / 3) * width / 6 + "px";
+      count++;
+    } else if (docType == docSelect && colorSelect=="colors" && senseSelect=="sense") {
+    imgResults[i].style.display = "block";
+    imgResults[i].style.position = "absolute";
+    if (imgResults[i].style.height > "200px") {
+      imgResults[i].style.height = "200px";
+      imgResults[i].style.width = "auto";
+    } else {
+      imgResults[i].style.width = "200px";
+      imgResults[i].style.height = "auto";
+    }
+    console.log(imgResults[i]);
+  
+    imgResults[i].style.top = count % 3 * 200 + "px";
+    imgResults[i].style.left = Math.floor(count / 3) * width / 6 + "px";
+    count++;
+    } else if (senseType == senseSelect && colorSelect=="colors" && docSelect=="document") {
+      imgResults[i].style.display = "block";
+      imgResults[i].style.position = "absolute";
+      if (imgResults[i].style.height > "200px") {
+        imgResults[i].style.height = "200px";
+        imgResults[i].style.width = "auto";
+      } else {
+        imgResults[i].style.width = "200px";
+        imgResults[i].style.height = "auto";
+      }
+      console.log(imgResults[i]);
+    
+      imgResults[i].style.top = count % 3 * 200 + "px";
+      imgResults[i].style.left = Math.floor(count / 3) * width / 6 + "px";
+      count++; 
+
+    } else if (sameFilters) {
+      imgResults[i].style.display = "block";
+      imgResults[i].style.position = "absolute";
+      if (imgResults[i].style.height > "200px") {
+        imgResults[i].style.height = "200px";
+        imgResults[i].style.width = "auto";
+      } else {
+        imgResults[i].style.width = "200px";
+        imgResults[i].style.height = "auto";
+      }
+      console.log(imgResults[i]);
+    
+      imgResults[i].style.top = count % 3 * 200 + "px";
+      imgResults[i].style.left = Math.floor(count / 3) * width / 6 + "px";
       count++;
     } else {
       imgResults[i].style.display = "none";
     }
   }
 }
+
 
 
 // let imgResults = document.getElementsByClassName("result");
