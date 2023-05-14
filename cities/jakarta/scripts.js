@@ -2,7 +2,7 @@ let how = document.getElementById("how");
 let modal = document.getElementById("myModal");
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
-let piecesjkt = document.getElementsByClassName("piecesjkt");
+let piecesjkts = document.getElementsByClassName("piecesjkt");
 let jkt1 = document.getElementById("jkt1");
 let jkt2 = document.getElementById("jkt2");
 let jkt3 = document.getElementById("jkt3");
@@ -25,6 +25,13 @@ let modaljkt9 = document.getElementById("modalJkt9");
 let modaljkt10 = document.getElementById("modalJkt10");
 let modals = document.querySelectorAll("modal");
 
+
+for (let piecesjkt of piecesjkts) {
+  let animationRandomSec = Math.random() * (8 - 3) + 3 + "s";
+  piecesjkt.style.animationDuration = animationRandomSec;
+  piecesjkt.style.display = "block";
+  console.log(piecesjkt);
+}
 
 // When the user clicks the button, open the modal 
 

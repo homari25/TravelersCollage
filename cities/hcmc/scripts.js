@@ -2,7 +2,7 @@ let how = document.getElementById("how");
 let modal = document.getElementById("myModal");
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
-let pieceshcmc = document.getElementsByClassName("pieceshcmc");
+let pieceshcmcs = document.getElementsByClassName("pieceshcmc");
 let hcmc1 = document.getElementById("hcmc1");
 let hcmc2 = document.getElementById("hcmc2");
 let hcmc3 = document.getElementById("hcmc3");
@@ -19,6 +19,13 @@ let modalhcmc6 = document.getElementById("modalHCMC6");
 let modalhcmc7 = document.getElementById("modalHCMC7");
 let modals = document.querySelectorAll("modal");
 
+
+for (let pieceshcmc of pieceshcmcs) {
+  let animationRandomSec = Math.random() * (8 - 3) + 3 + "s";
+  pieceshcmc.style.animationDuration = animationRandomSec;
+  pieceshcmc.style.display = "block";
+  console.log(pieceshcmc);
+}
 
 // When the user clicks the button, open the modal 
 // how.onclick = function() {

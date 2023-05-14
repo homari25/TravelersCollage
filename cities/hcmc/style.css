@@ -33,41 +33,53 @@ body{
     width:1440px;
     height:auto;
     top: 50%;
-    left:20%;
+    left:5%;
     mix-blend-mode: multiply;
     position: fixed;
     z-index: 1;
 }
 
 
+
 .title{
-    mix-blend-mode: multiply;
     position:absolute;
+    mix-blend-mode: multiply;
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .paragraph{
-    top:150px;
-    left:0px;
-    margin-left:2%;
+    top:30%;
+    left:0%;
+    margin-left:1%;
     position:absolute;
     width:250px;
     z-index:3;
     font-family: 'IBMPlexSans-Regular';
     font-size: 12px;
     color:black;
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .flag{
     position:absolute;
     mix-blend-mode: multiply;
-    margin-left:2%;
-    top:380px;
+    top:70%;
     left:0%;
-    width:20%;
+    width: 200px;
     height:auto;
     z-index:2;
+    margin-left:1%;
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
-
 .arrow {
     position:absolute;
     mix-blend-mode: multiply;
@@ -83,21 +95,37 @@ body{
     position:absolute;
     filter: drop-shadow(0 0 0.75rem gray);
     z-index: 2;
+    opacity:0;
+    transition: transform .6s ease;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.pieceshcmc:hover{
+    transform: scale(1.3);
 }
 
 
 .titlehcmc {
-    top:0%;
+    top:7%;
     left:0%;
-    width:45%;
+    width:35%;
     height:auto;
     mix-blend-mode: multiply;
 }
 
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
 #hcmc1 {
     top:100px;
     left:20%;
-    width:30%;
+    width:25%;
     height:auto;
 }
 
@@ -125,14 +153,14 @@ body{
 #hcmc5 {
     top:180px;
     left:100%;
-    width:30%;
+    width:22%;
     height:auto;
 }
 
 #hcmc6 {
     top:100px;
     left:85%;
-    width:20%;
+    width:18%;
     height:auto;
 }
 
@@ -210,111 +238,21 @@ h3{
     background-color: #fefefe;
     left: 40% ; /* 15% from the top and centered */
     top:40%;
-    padding: 20px;
-    padding-right:20px;
+    padding:15px;
     /* border: 1px solid #888; */
     width: 20%; /* Could be more or less, depending on screen size */
-    height:20%;
+    height:auto;
     align-content: center;
-    position:relative;
+    position:absolute;
+    display:block;
 }
   
-  
-  
-  /* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-  
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-h4{
-    z-index: 3;
-    font-family: 'IBMPlexSans-Regular', sans-serif;
-    margin:10px;
-}
 
 p{
     font-family: 'IBMPlexSans-Regular', sans-serif;
     font-size: small;
-    position:absolute;
+    /* position:absolute; */
+    width:calc(20%-20px);
+    align-content: center;
 }
 
-.example-double {
-    /* opacity: 0.8; */
-    margin: auto;
-    background-color: #D46262;
-    border: solid 2px #fff;
-    width: 11px;
-    height: 11px;
-    /* -moz-border-radius: 11px;
-    -webkit-border-radius: 11px; */
-    border-radius: 50%;
-    box-shadow: 0 0 0 2px #D46262;
-    /* -webkit-box-shadow: 0 0 0 1px #D46262;
-    -moz-box-shadow: 0 0 0 1px #D46262; */
-    position:absolute;
-    mix-blend-mode: multiply;
-    top:37.5%;
-    left:10%;
-}
-
-.example-red {
-    margin: auto;
-    background-color: #D46262;
-    width: 11px;
-    height: 11px;
-    mix-blend-mode: multiply;
-    border-radius: 50%;
-    position:absolute;
-    top:58.5%;
-    left:10%;
-}
-
-.example-blue {
-    margin: auto;
-    background-color: #6262D5;
-    width: 11px;
-    height: 11px;
-    mix-blend-mode: multiply;
-    border-radius: 50%;
-    position:absolute;
-    top:78.5%;
-    left:10%;
-}
-
-
-#check {
-    top:25%;
-    left:15%;
-    text-align: left;
-    margin:20px;
-    width:250px;
-    height:auto;
-}
-
-#been {
-    top:45%;
-    left:15%;
-    text-align: left;
-    margin:20px;
-    width:250px;
-    height:auto;
-}
-
-#wouldlove {
-    top:65%;
-    left:15%;
-    text-align: left;
-    margin:20px;
-    width:250px;
-    height:auto;
-}
