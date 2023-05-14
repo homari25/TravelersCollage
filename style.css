@@ -8,7 +8,7 @@ body{
 
 .container{
     width:1440px;
-    height:640px;
+    height:720px;
     background-color:transparent;
     top:60px;
     left:0px;
@@ -21,13 +21,13 @@ body{
   
 img.feature {
     position:absolute;
+    /* filter: drop-shadow(1px 1px 0rem #333333); */
     transition: transform .6s ease; 
     opacity:0;
     animation-name: appear;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-
 }
 
 @keyframes appear {
@@ -56,11 +56,12 @@ svg {
     width:100%;
     height:100%;
     position:absolute;
-    top:0%;
-    left:0%;
+    top:-2%;
+    left:1%;
     mix-blend-mode: color-burn;
     animation-name: appear;
     animation-duration: 3s;
+    align-content: center;
 }
 
 /* 
@@ -80,61 +81,61 @@ svg {
 #newyork {
     top:32%;
     left:72%;
-    width:170px;
+    width:220px;
 }
 
 #tokyo {
-    top:25%;
+    top:15%;
     left:40%;
-    width:150px;
+    width:200px;
 }
 
 #hcmc {
-    top:40%;
-    left:35%;
-    width:170px;
+    top:35%;
+    left:30%;
+    width:220px;
 }
 
 #jakarta {
     top:55%;
-    left:35%;
-    width:180px;
+    left:30%;
+    width:230px;
 }
 
 #leiden {
-    top:18%;
-    left:10%;
-    width:200px;
+    top:10%;
+    left:8%;
+    width:250px;
 }
 
 #istanbul {
-    top:30%;
-    left:23%;
-    width:150px;
+    top:22%;
+    left:20%;
+    width:200px;
 }
 
 #dubai {
-    top:45%;
-    left:27%;
-    width:150px;
+    top:40%;
+    left:22%;
+    width:200px;
 }
 
 #miyakejima {
     top:40%;
-    left:45%;
-    width:200px;
+    left:40%;
+    width:250px;
 }
 
 #marrakech {
-    top:40%;
-    left:15%;
-    width:150px;
+    top:35%;
+    left:10%;
+    width:200px;
 }
 
 #porto {
-    top:30%;
-    left:5%;
-    width:150px;
+    top:25%;
+    left:0%;
+    width:200px;
 }
 
 

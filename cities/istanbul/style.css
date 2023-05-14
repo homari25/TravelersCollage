@@ -181,7 +181,6 @@ p{
 
 .piecestk{
     position:absolute;
-    filter: drop-shadow(0 0 0.5rem #444444);
     z-index: 2;
     transition: transform .6s ease; 
     opacity:0;

@@ -93,7 +93,6 @@ body{
 
 .pieceshcmc{
     position:absolute;
-    filter: drop-shadow(0 0 0.75rem gray);
     z-index: 2;
     opacity:0;
     transition: transform .6s ease;

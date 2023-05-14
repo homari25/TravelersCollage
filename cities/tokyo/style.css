@@ -2,7 +2,6 @@ body{
     background-image: url("paperbg.jpg");
     background-color: #cccccc;
     position: relative;
-    overflow-x: auto;
 }
 
 
@@ -107,7 +106,7 @@ p{
     background-image: url("tokyobg.svg");
     width:1440px;
     height:auto;
-    top: 50%;
+    top: 30%;
     left:0%;
     mix-blend-mode: multiply;
     position: fixed;
@@ -115,7 +114,6 @@ p{
 }
 
 .title{
-    position:absolute;
     position:absolute;
     mix-blend-mode: multiply;
     animation-name: appear;
@@ -168,7 +166,6 @@ p{
 
 .piecestky{
     position:absolute;
-    filter: drop-shadow(0 0 0.75rem gray);
     z-index: 2;
     transition: transform .6s ease; 
     opacity:0;
@@ -183,9 +180,9 @@ p{
 }
 
 .titletky {
-    top:0%;
+    top:10%;
     left:0%;
-    width:25%;
+    width:20%;
     height:auto;
     mix-blend-mode: multiply;
 }
@@ -198,7 +195,7 @@ p{
 #tky1 {
     top:80px;
     left:20%;
-    width:30%;
+    width:25%;
     height:auto;
 }
 
@@ -210,21 +207,21 @@ p{
 }
 
 #tky3 {
-    top:300px;
+    top:270px;
     left:45%;
-    width:25%;
+    width:20%;
     height:auto;
 }
 
 #tky4 {
-    top:200px;
+    top:0%;
     left:60%;
-    width:40%;
+    width:30%;
     height:auto;
 }
 
 #tky5 {
-    top:250px;
+    top:30%;
     left:60%;
     width:25%;
     height:auto;
@@ -253,8 +250,8 @@ p{
 
 #tky9 {
     top:350px;
-    left:90%;
-    width:45%;
+    left:100%;
+    width:30%;
     height:auto;
 }
 
@@ -267,7 +264,7 @@ p{
 
 #tky11 {
     top:90px;
-    left:1115%;
+    left:115%;
     width:20%;
     height:auto;
 }

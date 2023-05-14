@@ -176,7 +176,6 @@ p{
 
 .piecesjkt{
     position:absolute;
-    filter: drop-shadow(0 0 0.75rem gray);
     z-index: 2;
     transition: transform .6s ease; 
     opacity:0;
