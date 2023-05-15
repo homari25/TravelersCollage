@@ -10,7 +10,7 @@ body{
     width:100vw;
     height:680px;
     background-color:transparent;  
-    top:10%;
+    top:70px;
     left:0%;
     float:left;
     clear:none;
@@ -158,4 +158,3 @@ p{
     width:400px;
     height:auto;
 }
-
