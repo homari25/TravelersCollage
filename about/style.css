@@ -41,11 +41,12 @@ body{
     /* display:flex; */
 }
 
-.mainParagraph{
-    top:5%;
+#mainP{
+    top:0%;
     left:10%;
     position:absolute;
-    width:380px;
+    width:500px;
+    mix-blend-mode: multiply;
     animation-name: appear;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
@@ -53,8 +54,8 @@ body{
 }
 
 .explain{
-    top:30%;
-    left:10%;
+    top:40%;
+    left:7%;
     position:absolute;
     width:500px;
     animation-name: appear;
@@ -75,7 +76,7 @@ body{
 }
 
 #pictureOne {
-    top:12%;
+    top:20%;
     left:5%;
     width:400px;
     z-index: 2;
@@ -83,7 +84,7 @@ body{
 }
 
 #pictureTwo {
-    top:40%;
+    top:65%;
     left:40%;    
     width:300px;
     transform:rotate(7deg);
