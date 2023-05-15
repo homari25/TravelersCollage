@@ -6,119 +6,93 @@ body{
 
 }
 
-/* select {
-    margin-left:200px;
-} */
-
-.searchbars{
-    top:70px;
-    left:0%;
-    width:100vw;
-    height:70px;
-    position:fixed;
-    /* background-color: blue; */
-    z-index: 2;
-    padding:20px;
-    padding-bottom:0px;
-    margin:auto;
-    background-image: url("paperbg.jpg");
-}
-
-.search{
-    font-family: 'IBMPlexSans-Regular', sans-serif;
-    text-align:center;
-    font-size:16px;
-    font-weight:bold;
-    color:black;
-    background-color: transparent;
-    width: 200px;
-    height:40px;
-    margin:auto;
-    position:absolute;
-    /* display:block; */
-    /* flex-wrap:inherit; */
-}
-
-#colorList{
-    left: 20px;
-}
-
-#documentList{
-    left:250px;
-}
-
-#senseList{
-    left: 480px;
-}
-
-#submitButton {
-    left:710px;
-    position:absolute;
-    font-family: 'IBMPlexSans-Regular', sans-serif;
-    text-align:center;
-    font-size:16px;
-    font-weight:bold;
-    color:white;
-    background-color: black;
-    width: 100px;
-    height:40px;
-    margin:auto;
-}
-
-
-.search .select {
-    font-family: 'IBMPlexSans-Regular', sans-serif;
-    text-align:center;
-    font-size:16px;
-    font-weight:bold;
-    color:black;
-    background-color: transparent;
-    width: 200px;
-    height:40px;
-    margin:auto;
-    position:absolute;
-}
-
-.search .selected {
-    background-color:black;
-    color:white;
-    font-family: 'IBMPlexSans-Regular', sans-serif;
-    text-align:center;
-    font-size:16px;
-    font-weight:bold;
-    width: 200px;
-    height:40px;
-    margin:auto;
-    position:absolute;
-}
-
-#container{
+.container {
     width:100vw;
     height:680px;
-    background-color:transparent;
-    top:140px;
-    left:0px;
+    background-color:transparent;  
+    top:10%;
+    left:0%;
+    float:left;
+    clear:none;
+    z-index:1;
     position:relative;
-    margin:0px;
-    align-items: center;
-    /* overflow:hidden; */
 }
 
-
-
-.result{
+.textContainer{
+    width:50vw;
+    height:600px;
+    background-color:transparent;
+    top:10%;
+    left:0%;
     position:absolute;
-    width:10%;
-    display:none;
+    /* margin:10px; */
+    /* display:flex; */
 }
 
-/* #ny1{
-    top:0px;
-    left:0px;
+.picContainer{
+    width:50vw;
+    height:600px;
+    background-color:transparent;
+    top:10%;
+    left:50%;
+    position:absolute;
+    /* margin:10px; */
+    align-items: center;
+    /* display:flex; */
+}
 
+.mainParagraph{
+    top:5%;
+    left:10%;
+    position:absolute;
+    width:380px;
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.explain{
+    top:30%;
+    left:10%;
+    position:absolute;
+    width:500px;
+    animation-name: appear;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.picture {
     height:auto;
-} */
+    position:absolute;
+    mix-blend-mode: darken;
+    opacity:0;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
 
+#pictureOne {
+    top:12%;
+    left:5%;
+    width:400px;
+    z-index: 2;
+    transform:rotate(-7deg);
+}
+
+#pictureTwo {
+    top:40%;
+    left:40%;    
+    width:300px;
+    transform:rotate(7deg);
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 /* menu */
 
 .menu{
@@ -136,8 +110,16 @@ h3{
     color:black;
     z-index: 2;
     font-family: 'IBMPlexSans-Regular', sans-serif;
-    margin:10px;
-    font-size: 24px;
+    /* margin:10px; */
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+
+p{
+    font-family: 'IBMPlexSans-Regular', sans-serif;
+    font-size: small;
+    position:absolute;
 }
 
 #about{
@@ -168,25 +150,3 @@ h3{
     height:auto;
 }
 
-
-p{
-    font-family: 'IBMPlexSans-Regular', sans-serif;
-    font-size: small;
-    position:absolute;
-}
-
-.result{
-    width:15%;
-    height:auto;
-    position:absolute;
-    transition: transform .6s ease; 
-}
-
-.result:hover{
-    transform: scale(1.3); 
-    z-index:3;  
-}
-
-#tk4{
-    width:10%;
-}
