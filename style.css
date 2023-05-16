@@ -1,15 +1,16 @@
 body{
     /* background-image: url("main-parts/paperbg.jpg"); */
+    background-image: url("main-parts/paperbg.jpg");
     background-color: #ffffff;
     position:relative;
-    mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
 }
 
 
 .container{
     width:1440px;
     height:720px;
-    background-color:transparent;
+    background-color:red;
     top:60px;
     left:0px;
     position:fixed;
